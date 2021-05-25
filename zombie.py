@@ -1,4 +1,3 @@
-print
 people_on_left = range(0, 4)
 choices = []
 first = 0
