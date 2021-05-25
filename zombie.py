@@ -1,6 +1,5 @@
 people_on_left = range(0, 4)
 choices = []
-first = 0
 
 ##################################
 class Person:
@@ -8,6 +7,7 @@ class Person:
 		self.name = name
 		self.time_to_cross = time_to_cross
 people = (Person("John", 1), Person("Ringo", 2), Person("Paul", 5), Person("George", 10))
+
 ###################################
 def calcPeopleOnLeft(list_of_crossings):
 	left = list(people_on_left)
