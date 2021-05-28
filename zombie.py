@@ -9,6 +9,7 @@ class Person:
 people = (Person("John", 1), Person("Ringo", 2), Person("Paul", 5), Person("George", 10))
 
 ###################################
+ # Sample input: [[0,1], [0, 2]]
 def calcPeopleOnLeft(list_of_crossings):
 	left = list(people_on_left)
 	returning_people = []
@@ -24,6 +25,7 @@ def calcPeopleOnLeft(list_of_crossings):
 	return left, returning_people
 
 ###################################
+ # Sample input: (current_crossings: [[0,1], [0,2]], possible_crossings: [[0,3]]
 def mergeChoices(current_crossings, possible_crossings):
 	merged_choices = []
 	current_crossings_to_delete = list(current_crossings)
@@ -33,6 +35,7 @@ def mergeChoices(current_crossings, possible_crossings):
 		choices.append(merged_choices)
 
 ###################################
+ # Sample input: [0, 1, 2, 3]
 def calcPossibleCrossings(left):
 	possible_crossings = []
 	for outer in range(0, len(left) - 1):
@@ -41,7 +44,7 @@ def calcPossibleCrossings(left):
 	return possible_crossings
 
 ###################################
-#people_who_crossed = [[0, 1], [0, 2], [0, 3]]
+ # Sample input: [[0, 1], [0, 2], [0, 3]]
 def calcTimeTaken(people_who_crossed):
 	time_taken = 0
 	left, returning_people = calcPeopleOnLeft(people_who_crossed)
